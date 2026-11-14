@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daroueche Maanrouf — Data Analyst, Finance quantitative</title>
+<meta name="description" content="Portfolio de Daroueche Maanrouf, à la recherche d'un stage de 6 mois en data analysis ou en finance quantitative.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--ink:#14213d;--muted:#5b6578;--line:#dde1e8;--accent:#0b7a75;--accent-ink:#fff;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--surface:#172033;--ink:#e8ecf4;--muted:#9aa5ba;--line:#2a3550;--accent:#3cc4bb;--accent-ink:#0f1624;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Work Sans",system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0)}
+a{color:var(--accent)}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;line-height:1.15;margin:0}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:1rem}
+.logo{font-family:"Newsreader",serif;font-weight:700;color:var(--ink);text-decoration:none;font-size:1.15rem}
+nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav li a{color:var(--muted);text-decoration:none;font-size:.9rem;white-space:nowrap}
+nav li a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:2.5rem;align-items:center;padding:3.5rem 0 3rem}
+.badge{display:inline-block;border:1px solid var(--accent);color:var(--accent);border-radius:99px;padding:.2rem .8rem;font-size:.85rem;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:700}
+.role{color:var(--muted);margin:.8rem 0 1rem;font-weight:500}
+.hero p{max-width:52ch}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.btn{padding:.65rem 1.1rem;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.portrait{aspect-ratio:4/5;border-radius:10px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font:700 4rem "Newsreader",serif;color:var(--accent);overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+.sec{color:var(--muted);font-size:.9rem;margin-bottom:.4rem}
+h2{font-size:2rem;margin-bottom:1.5rem}
+.projects{display:grid;gap:1.25rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.4rem}
+.card .fig{color:var(--muted);font-size:.85rem}
+.card h3{font-size:1.4rem;margin:.2rem 0 .7rem}
+.card ul{margin:0 0 1rem;padding-left:1.1rem}
+.card li{margin:.3rem 0}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0}
+.tags span{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:.1rem .55rem;font-size:.85rem}
+.links{display:flex;flex-wrap:wrap;gap:1rem;font-size:.95rem;font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.skills h3{font-size:1.1rem;margin-bottom:.4rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.cols h3{font-size:1.3rem;margin-bottom:1rem}
+.item{border-left:2px solid var(--line);padding:0 0 1.2rem 1rem;position:relative}
+.item::before{content:"";position:absolute;left:-6px;top:.45rem;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.item .date{color:var(--muted);font-size:.85rem}
+.item h4{margin:.1rem 0;font-size:1.02rem}
+.item p{margin:0;color:var(--muted);font-size:.93rem}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin-top:1.5rem}
+.contact a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;text-decoration:none;color:var(--ink)}
+.contact small{display:block;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.9rem}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (max-width:700px){.hero{grid-template-columns:1fr;padding-top:2rem}.portrait{max-width:220px;aspect-ratio:1}.cols{grid-template-columns:1fr}nav ul{gap:.9rem}}
+.domains{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.25rem}.card .lead{color:var(--muted);margin:0 0 .8rem}.card li small{color:var(--muted)}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">Daroueche Maanrouf</a>
+<ul><li><a href="#profil">Profil</a></li><li><a href="#projets">Projets</a></li><li><a href="#formation">Formation</a></li><li><a href="#competences">Compétences</a></li><li><a href="#parcours">Parcours</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<main id="top" class="wrap">
+<header class="hero">
+<div>
+<span class="badge">Disponible — stage de fin d'études de 6 mois, dès avril 2027</span>
+<h1>Daroueche Maanrouf</h1>
+<p class="role">Data Analyst · Finance quantitative</p>
+<p>Je transforme l'incertitude en décisions : probabilités, statistiques et modèles pour comprendre des données et des marchés. Je cherche un stage de six mois où mettre ça au service d'une équipe.</p>
+<div class="btns">
+<a class="btn main" href="#projets">Voir mes projets</a>
+<a class="btn" href="assets/CV_Daroueche_Maanrouf.pdf">Télécharger mon CV</a>
+<a class="btn" href="mailto:maanrouf.daroueche976@gmail.com">Me contacter</a>
+</div></div>
+<div class="portrait" aria-label="Portrait"><span>DM</span></div>
+<!-- Photo : remplace le <span> par <img src="assets/portrait.jpg" alt="Portrait de Daroueche Maanrouf"> -->
+</header>
+
+<section id="profil">
+<div class="sec">§ 01</div><h2>Profil</h2>
+<p>Je viens de Mayotte. J'y ai fait ma prépa PTSI et ma licence de maths, puis je suis venu à Metz pour le Master. Ça m'a appris à me débrouiller seul et à tenir sur la durée.</p>
+<p>Je suis aujourd'hui en Master 2 Probabilités et Statistique Appliquées. J'y apprends à construire des modèles à partir de données et à mesurer le risque, avec R, Python, SQL et MATLAB. Je cherche un stage de six mois en finance quantitative ou en analyse de données.</p>
+<p>Depuis 2025, je donne aussi des cours de maths, du primaire à la licence. Ça m'a appris à expliquer simplement des choses compliquées, et c'est utile pour présenter des résultats à quelqu'un qui n'est pas matheux.</p>
+</section>
+
+<section id="projets">
+<div class="sec">§ 02</div><h2>Projets</h2>
+<div class="projects">
+<article class="card"><div class="fig">Fig. 1 — Finance quantitative · 2026</div>
+<h3>Projet d'économétrie financière</h3>
+<ul><li>J'applique à des données financières les outils vus en Master 2, sous MATLAB</li><li>Projet en cours, à rendre le 20 décembre 2026</li><li>S'appuie sur mes cours de modélisation stochastique, d'économétrie financière et de gestion des risques</li></ul>
+<div class="tags"><span>MATLAB</span><span>Économétrie financière</span><span>Modélisation stochastique</span></div></article>
+
+<article class="card"><div class="fig">Fig. 2 — Bases de données · 2025</div>
+<h3>Enquête SQL</h3>
+<ul><li>J'ai résolu une enquête fictive en interrogeant une base avec 34 requêtes</li><li>Jointures, filtres et agrégations pour recouper les indices</li></ul>
+<div class="tags"><span>SQL</span><span>Jointures</span><span>Agrégations</span></div></article>
+
+<article class="card"><div class="fig">Fig. 3 — Statistiques</div>
+<h3>TP de statistiques sous R</h3>
+<ul><li>Analyse de données et ANOVA pour comparer des groupes</li><li>Méthodes de classification pour prédire une catégorie</li></ul>
+<div class="tags"><span>R</span><span>ANOVA</span><span>ACP</span><span>Classification</span></div></article>
+
+<article class="card"><div class="fig">Fig. 4 — Recherche · 2024–2025</div>
+<h3>TER : Mesure de Mahler</h3>
+<ul><li>J'ai étudié un article de recherche, à la croisée de l'algèbre et de l'analyse</li><li>J'y ai démontré un résultat sur la mesure de Mahler d'un polynôme</li><li>Présenté à l'écrit puis à l'oral devant un jury</li></ul>
+<div class="tags"><span>Algèbre</span><span>Analyse</span><span>Rédaction scientifique</span></div></article>
+
+<article class="card"><div class="fig">Fig. 5 — Séries chronologiques · Projet personnel</div>
+<h3>Prévision de la consommation d'électricité à Mayotte</h3>
+<ul><li>Projet personnel sous R : analyse et prévision de la consommation d'électricité à Mayotte, avec des scénarios de croissance à l'horizon 2030</li><li>Données publiques de l'IEDOM (source EDM) : 16 trimestres, de 2020T3 à 2024T2</li><li>Décomposition de la série (tendance, saisonnalité), puis comparaison d'une tendance linéaire et d'un lissage de Holt sur un échantillon de test</li><li>Prévision à 12 trimestres et scénarios de croissance de 3 %, 5 % et 8 % par an</li><li>Limite : série courte, arrêtée avant le cyclone Chido</li></ul>
+<div class="tags"><span>R</span><span>tidyverse</span><span>forecast</span><span>Lissage de Holt</span><span>Séries chronologiques</span></div>
+<div class="links"><a href="https://github.com/maanroufdaroueche/prevision-conso-electricite-mayotte">Code et rapport</a></div></article>
+</div>
+</section>
+
+<section id="formation">
+<div class="sec">§ 03</div><h2>Formation par domaines</h2>
+<p style="margin-top:-.6rem;color:var(--muted)">Master 2 Probabilités et Statistique Appliquées, 2026 – 2027, regroupé par grands thèmes.</p>
+<div class="domains">
+<article class="card"><div class="fig">Finance quantitative</div>
+<h3>Modéliser et valoriser</h3>
+<p class="lead">Représenter l'évolution des prix d'actifs et valoriser des produits financiers, par le calcul comme par la simulation.</p>
+<ul><li>Modèles stochastiques pour la finance quantitative <small>(S1)</small> : formule d'Itô, intégrales stochastiques</li><li>Méthodes numériques pour les EDP en finance <small>(S1)</small></li><li>Économétrie financière <small>(S1)</small> : sous MATLAB</li><li>Marchés financiers : tarification et couverture <small>(S2)</small></li><li>Simulation stochastique, méthodes de Monte-Carlo <small>(S2)</small></li></ul>
+<div class="tags"><span>Formule d'Itô</span><span>Calcul stochastique</span><span>EDP</span><span>Monte-Carlo</span><span>Couverture</span><span>Économétrie financière</span><span>MATLAB</span></div></article>
+
+<article class="card"><div class="fig">Risque &amp; assurance</div>
+<h3>Mesurer et gérer le risque</h3>
+<p class="lead">Quantifier les risques d'une banque ou d'un assureur, tarifer et se protéger.</p>
+<ul><li>Mesure et gestion du risque <small>(S2)</small></li><li>Mathématiques de l'actuariat non-vie <small>(S2)</small></li><li>Réassurance : introduction et études de cas <small>(S2)</small></li><li>Métiers du risque en banque <small>(S2)</small></li></ul>
+<div class="tags"><span>Gestion des risques</span><span>Actuariat non-vie</span><span>Réassurance</span><span>Risque bancaire</span></div></article>
+
+<article class="card"><div class="fig">Statistiques</div>
+<h3>Des bases mathématiques à l'étude de cas</h3>
+<p class="lead">Les fondements théoriques de la statistique, puis leur mise en pratique sur des données.</p>
+<ul><li>Méthodes mathématiques pour les statistiques <small>(S1)</small> : géométrie statistique, calcul matriciel, séries chronologiques</li><li>Programmation R <small>(S1)</small> : sous R</li><li>Études de cas en statistique <small>(S1)</small></li></ul>
+<div class="tags"><span>R</span><span>Séries chronologiques</span><span>Calcul matriciel</span><span>Géométrie statistique</span></div></article>
+
+<article class="card"><div class="fig">Data &amp; intelligence artificielle</div>
+<h3>Apprendre des données et les programmer</h3>
+<p class="lead">Des modèles d'apprentissage appliqués à l'assurance et à la finance, et les outils pour les mettre en œuvre.</p>
+<ul><li>Machine learning et deep learning en assurance et en finance <small>(S1)</small></li><li>Bases de données <small>(S1)</small> : SQL</li><li>Programmation rapide et langages de script <small>(S1)</small> : Python</li></ul>
+<div class="tags"><span>Machine learning</span><span>Deep learning</span><span>SQL</span><span>Python</span><span>Scripts</span></div></article>
+
+<article class="card"><div class="fig">Entreprise</div>
+<h3>Anglais et stage</h3>
+<ul><li>Anglais pour l'entreprise <small>(S1)</small></li><li>Stage en entreprise de six mois <small>(S2)</small> : celui que je recherche, dès avril 2027</li></ul></article>
+</div>
+</section>
+
+<section id="competences">
+<div class="sec">§ 04</div><h2>Compétences</h2>
+<div class="skills">
+<div><h3>Langages</h3><div class="tags"><span>Python (pandas)</span><span>R</span><span>SQL</span><span>MATLAB</span></div></div>
+<div><h3>Probabilités &amp; statistiques</h3><div class="tags"><span>ACP</span><span>ANOVA</span><span>Modélisation stochastique</span><span>Économétrie</span><span>Séries chronologiques</span></div></div>
+<div><h3>Machine learning</h3><div class="tags"><span>SVM</span><span>SVR</span><span>Naive Bayes</span><span>KNN</span><span>Méthodes linéaires</span><span>Deep learning</span></div></div>
+<div><h3>Bases de données</h3><div class="tags"><span>Modélisation relationnelle</span><span>Requêtes SQL</span></div></div>
+<div><h3>Finance quantitative</h3><div class="tags"><span>Économétrie financière (MATLAB)</span><span>Calcul stochastique</span><span>Monte-Carlo</span><span>Gestion des risques</span></div></div>
+<div><h3>Outils</h3><div class="tags"><span>Excel (import et traitement de données)</span></div></div>
+</div>
+</section>
+
+<section id="parcours">
+<div class="sec">§ 05</div><h2>Parcours</h2>
+<div class="cols">
+<div><h3>Formation</h3>
+<div class="item"><div class="date">2026 – 2027 (en cours)</div><h4>Master 2 Mathématiques et Applications, parcours PSA</h4><p>Université de Lorraine, UFR MIM, Metz. Détail des cours dans « Formation par domaines ».</p></div>
+<div class="item"><div class="date">2024 – 2026</div><h4>Master 1 Mathématiques et Applications</h4><p>Université de Lorraine, UFR MIM, Metz</p></div>
+<div class="item"><div class="date">2022 – 2024</div><h4>Licence de Mathématiques générales</h4><p>Centre universitaire de Mayotte</p></div>
+<div class="item"><div class="date">2020 – 2022</div><h4>Classes préparatoires PTSI</h4><p>Lycée Younoussa Bamana, Mayotte</p></div></div>
+<div><h3>Expérience</h3>
+<div class="item"><div class="date">2025 – présent</div><h4>Tutorat en mathématiques</h4><p>À distance, indépendant. Cours particuliers du primaire à la licence, préparation aux examens, devoirs et contrôles.</p></div>
+<h3 style="margin-top:1.5rem">Langues</h3>
+<div class="item"><h4>Français</h4><p>Courant</p></div>
+<div class="item"><h4>Anglais</h4><p>Intermédiaire, TOEIC en préparation</p></div>
+<div class="item"><h4>Shimaoré, kibushi</h4><p>Langues maternelles</p></div>
+<h3 style="margin-top:1.5rem">Hors études</h3>
+<div class="item"><h4>Basketball</h4><p>Membre d'un club depuis 2021</p></div></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Vous avez un sujet de data analysis ou de finance quantitative pour un stage de six mois à partir d'avril 2027 ? Écrivez-moi. Je suis mobile dans toute la France, outre-mer inclus, et j'ai le permis B.</p>
+<div class="contact">
+<a href="mailto:maanrouf.daroueche976@gmail.com"><small>Email</small>maanrouf.daroueche976@gmail.com</a>
+<a href="tel:+33623169522"><small>Téléphone</small>06 23 16 95 22</a>
+<a href="https://linkedin.com/in/daroueche-maanrouf-41979142a"><small>LinkedIn</small>daroueche-maanrouf</a>
+<a href="https://github.com/maanroufdaroueche"><small>GitHub</small>maanroufdaroueche</a>
+<a href="assets/CV_Daroueche_Maanrouf.pdf"><small>CV</small>Télécharger le PDF</a>
+<a href="#top"><small>Localisation</small>Metz, France</a>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Daroueche Maanrouf</div></footer>
+</body>
+</html>
